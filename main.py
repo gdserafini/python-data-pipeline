@@ -1,6 +1,11 @@
+from pipeline.pipeline import Pipeline
+from pipeline.data_handler import DataHandler
+
 
 def main() -> None:
-    print('Hello world!')
+    data_handler = DataHandler()
+    pipeline = Pipeline(data_handler)
+    pipeline.run()
 
 
 if __name__ == '__main__':
